@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "files.associations": {
+      "Dockerfile": "dockerfile"
+    },
+    "editor.tabSize": 4
+  }
+}
