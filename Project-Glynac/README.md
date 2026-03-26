@@ -63,7 +63,7 @@ curl http://localhost:5000/api/health
 # All customers (default page=1, limit=10)
 curl http://localhost:5000/api/customers
 
-# Page 2, 5 per page
+# Page 2, 
 curl "http://localhost:5000/api/customers?page=2&limit=5"
 
 # Single customer
@@ -75,7 +75,7 @@ curl http://localhost:5000/api/customers/CUST999
 
 ### FastAPI Pipeline Service (port 8000)
 
-```bash
+```
 # Trigger ingestion (pulls from Flask, saves to PostgreSQL)
 curl -X POST http://localhost:8000/api/ingest
 
@@ -89,12 +89,6 @@ curl http://localhost:8000/api/customers/CUST001
 # http://localhost:8000/docs
 ```
 
-## Stopping the services
-
-```bash
-docker-compose down          # stop containers
-docker-compose down -v       # also delete the database volume
-```
 
 ## Key Concepts
 
